@@ -1,0 +1,47 @@
+.features {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.container {
+		width: 1400px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.item {
+		flex-basis: 50%;
+		h1 {
+			color: #404145;
+		}
+		video {
+			width: 100%;
+			object-fit: cover;
+		}
+		p {
+			color: #62646a;
+			font-size: 18px;
+			line-height: 26px;
+			padding: 10px 0;
+		}
+
+		&:first-child {
+			padding-right: 11%;
+		}
+	}
+
+	.title {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		font-size: 18px;
+		font-weight: 500;
+		color: #404145;
+		padding-top: 10px;
+
+		img {
+			height: 30px;
+		}
+	}
+}

@@ -3,31 +3,39 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-color: #f1fdf7;
+	padding: 96px 0;
 
 	.container {
-		width: 1400px;
+		width: 90vw;
+		max-width: 1400px;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
+		gap: 15px;
 	}
 
 	.item {
-		flex-basis: 50%;
+		&:first-child {
+			flex: 2;
+		}
+
+		&:last-child {
+			flex: 3;
+		}
 		h1 {
 			color: #404145;
 		}
 		video {
 			width: 100%;
 			object-fit: cover;
+			border-radius: 5px;
 		}
 		p {
 			color: #62646a;
 			font-size: 18px;
 			line-height: 26px;
 			padding: 10px 0;
-		}
-
-		&:first-child {
-			padding-right: 11%;
 		}
 	}
 

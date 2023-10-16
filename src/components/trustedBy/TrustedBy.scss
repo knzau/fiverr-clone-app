@@ -2,7 +2,6 @@
 	display: flex;
 	background-color: rgb(247, 247, 247);
 	height: 95px;
-  margin-bottom: 95px;
 }
 
 .container {
@@ -10,7 +9,8 @@
 	align-items: center;
 	justify-content: center;
 	gap: 20px;
-	width: 1400px;
+	width: 90vw;
+	max-width: 1400px;
 	color: #b5b6ba;
 
 	.img-wrapper {

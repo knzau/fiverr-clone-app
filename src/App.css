@@ -2,3 +2,14 @@
 	text-decoration: none;
 	color: inherit;
 }
+
+@font-face {
+	font-family: "Domaine Display Medium Regular";
+	src: url("https://db.onlinewebfonts.com/t/7880566f54ea598eee93c1e4df8437cb.eot");
+	src: url("https://db.onlinewebfonts.com/t/7880566f54ea598eee93c1e4df8437cb.eot?#iefix") format("embedded-opentype"),
+		url("https://db.onlinewebfonts.com/t/7880566f54ea598eee93c1e4df8437cb.woff2") format("woff2"),
+		url("https://db.onlinewebfonts.com/t/7880566f54ea598eee93c1e4df8437cb.woff") format("woff"),
+		url("https://db.onlinewebfonts.com/t/7880566f54ea598eee93c1e4df8437cb.ttf") format("truetype"),
+		url("https://db.onlinewebfonts.com/t/7880566f54ea598eee93c1e4df8437cb.svg#Domaine Display Medium Regular")
+			format("svg");
+}

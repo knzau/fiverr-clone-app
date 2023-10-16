@@ -1,0 +1,39 @@
+.common-button {
+	padding: 12px 24px;
+	border-radius: 5px;
+	background-color: #1dbf73;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	font-size: 16px;
+}
+
+.primaryBtn {
+	color: white;
+	background-color: #1dbf73;
+	&:hover {
+		background-color: #19a463;
+	}
+}
+
+.secondaryBtn {
+	padding: 10px 20px;
+	color: white;
+	background: transparent;
+	border: 1px solid #fff;
+	&:hover {
+		background-color: #1dbf73;
+		border-color: #1dbf73;
+	}
+}
+
+.secondary-variant-2 {
+	padding: 10px 20px;
+	color: #1dbf73;
+	background: transparent;
+	border: 1px solid #1dbf73;
+	&:hover {
+		background-color: #1dbf73;
+		color: #fff;
+	}
+}

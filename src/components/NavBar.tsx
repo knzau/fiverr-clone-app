@@ -1,15 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.scss";
+import CommonButton from "./CommonButton/CommonButton";
 
 const NavBar = () => {
 	const [isActive, setIsActive] = useState(false);
 	const [open, setOpen] = useState(false);
 	const { pathname } = useLocation();
 
-	const isVisible = () => {
+	const isVisible = useCallback(() => {
 		window.scrollY > 0 ? setIsActive(true) : setIsActive(false);
-	};
+	}, []);
 
 	useEffect(() => {
 		window.addEventListener("scroll", isVisible);
@@ -17,13 +18,14 @@ const NavBar = () => {
 		return () => {
 			window.removeEventListener("scroll", isVisible);
 		};
-	}, []);
+	}, [isVisible]);
 
 	const currentUser = {
 		id: 1,
 		username: "John Doe",
 		isSeller: true,
 	};
+	console.log({ visible: isActive });
 
 	return (
 		<div className={isActive || pathname !== "/" ? "navbar active" : "navbar"}>
@@ -41,10 +43,12 @@ const NavBar = () => {
 					<span>Sign in</span>
 					<span>Become a Seller</span>
 					{!currentUser?.isSeller && <span>Become a Seller</span>}
-					{!currentUser && <button>Join</button>}
-					{currentUser && (
+					{currentUser.id && (
+						<CommonButton label="Join" type="secondary" variant={isActive ? "secondary-variant-2" : ""} />
+					)}
+					{!currentUser && (
 						<div className="user" onClick={() => setOpen(!open)}>
-							<img src="" alt="" />
+							<img src="https://randomuser.me/api/portraits/men/28.jpg" alt="profile-pic" />
 							<span> {currentUser?.username} </span>
 							{open && (
 								<div className="options">

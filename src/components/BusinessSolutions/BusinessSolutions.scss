@@ -1,0 +1,57 @@
+.business-solutions {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(13, 8, 77);
+
+	.container {
+		width: 90vw;
+		max-width: 1400px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 96px 32px;
+	}
+
+	.item {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 50%;
+		justify-content: center;
+		align-items: flex-start;
+		color: #fff;
+
+		img {
+			width: 100%;
+		}
+		h2 {
+			max-width: 450px;
+			color: #fff;
+			padding-bottom: 24px;
+			text-align: left;
+			font-size: 32px;
+		}
+		h4 {
+			padding: 6px 0;
+			color: #fff;
+		}
+	}
+	.sub-items {
+		margin-bottom: 32px;
+	}
+	.sub-item {
+		display: flex;
+		align-items: center;
+		column-gap: 12px;
+		width: 80%;
+		padding: 10px 0px;
+	}
+
+	.business-solutions__logo {
+		display: flex;
+		column-gap: 16px;
+		align-items: flex-end;
+		margin-bottom: 32px;
+	}
+}

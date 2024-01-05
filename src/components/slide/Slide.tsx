@@ -22,6 +22,15 @@ const Slide = ({ children, slidesToShow, arrowsScroll, prevArrow, nextArrow, cla
 				},
 			},
 			{
+				breakpoint: 900,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					infinite: true,
+					dots: true,
+				},
+			},
+			{
 				breakpoint: 600,
 				settings: {
 					slidesToShow: 2,
@@ -48,6 +57,7 @@ const Slide = ({ children, slidesToShow, arrowsScroll, prevArrow, nextArrow, cla
 					arrowsScroll={arrowsScroll}
 					prevArrow={prevArrow}
 					nextArrow={nextArrow}
+					settings={settings}
 					{...props}
 				>
 					{children}

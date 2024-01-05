@@ -8,11 +8,13 @@ import { GrFormPrevious, GrFormNext } from "react-icons/gr";
 import Features from "../../components/features/Features";
 import JoinFiverr from "../../components/JoinFiverr/JoinFiverr";
 import { sliderResponsiveSettings } from "./homeUtils";
+import BusinessSoulutions from "../../components/BusinessSolutions/BusinessSolutions";
+import Categories from "../../components/Categories/Categories";
+import ProjectWork from "../../components/InspiringWork/ProjectWork";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
 	const docRef = useRef();
-
-	console.log({ width: docRef.current?.offsetWidth });
 
 	return (
 		<div ref={docRef}>
@@ -31,6 +33,9 @@ const Home = () => {
 				))}
 			</Slide>
 			<Features />
+			<Categories />
+			<ProjectWork />
+			<BusinessSoulutions />
 			<JoinFiverr />
 		</div>
 	);

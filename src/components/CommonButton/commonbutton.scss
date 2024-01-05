@@ -18,11 +18,12 @@
 
 .secondaryBtn {
 	padding: 10px 20px;
-	color: white;
-	background: transparent;
+	color: #62646a;
+	background: white;
 	border: 1px solid #fff;
 	&:hover {
 		background-color: #1dbf73;
+		color: white;
 		border-color: #1dbf73;
 	}
 }

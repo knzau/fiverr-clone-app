@@ -1,0 +1,30 @@
+.footer {
+	width: 100%;
+	border-top: 1px solid rgba(98, 100, 106, 0.2);
+
+	.container {
+		max-width: 1400px;
+		display: flex;
+		height: 380px;
+		margin: 0 auto;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding: 96px 0;
+		flex-wrap: wrap;
+	}
+
+	.footer-category {
+		display: flex;
+		flex-direction: column;
+		text-transform: capitalize;
+		row-gap: 16px;
+
+		& p {
+			color: rgba(98, 100, 106, 1);
+			padding: 4px 0;
+		}
+		& p:hover {
+			text-decoration: 1px solid black;
+		}
+	}
+}

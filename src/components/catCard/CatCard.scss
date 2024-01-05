@@ -1,5 +1,4 @@
 .cart-card {
-	width: 252px;
 	height: 344px;
 	color: white;
 	border-radius: 5px;
@@ -12,7 +11,9 @@
 		top: 15px;
 		left: 15px;
 		z-index: 20;
+		padding-left: 14px;
 	}
+
 	.title {
 		position: absolute;
 		font-size: 24px;
@@ -20,6 +21,7 @@
 		left: 15px;
 		top: 40px;
 		z-index: 20;
+		padding-left: 14px;
 	}
 
 	img {
